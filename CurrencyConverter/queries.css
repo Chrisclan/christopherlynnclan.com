@@ -1,0 +1,63 @@
+
+
+/*1025px — 1200px: Desktops, large screens*/
+@media only screen and (max-width: 1201px) {
+    .container {
+        max-width: 70%;
+    }
+    
+}
+
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+    
+}
+
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (max-width: 768px) {
+    
+    
+
+    .container {
+        max-width: 95%;
+        width: 90%;
+        height: 425px;
+    }
+    /* .container {
+        width: 90%;
+        height: 500px;
+    } */
+    
+    .selection {
+        padding: 0;
+    }
+    .selection-box {
+        height: 80%;
+        margin: 5% 3% 0;
+    }
+
+    select,
+    #input-currency,
+    #selectTo {
+        width: 90%;
+    }
+
+    .submit-btn,
+    #btn-id {
+        display: none;
+    }
+
+    .submit-btn2,
+    #btn-id2 {
+        display: block;
+    }
+}
+
+/*320px — 480px: Mobile devices*/
+@media only screen and (max-width: 480px) {
+    
+
+}

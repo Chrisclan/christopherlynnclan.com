@@ -1,0 +1,449 @@
+/* colors
+#242331
+#533e2d
+#a27035
+#b88b4a
+#ddca7d
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    height: 12vh; /* NEW */
+    display: flex;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/backgrounds/12.jpg);
+    /* text-align: center;  */
+    /* padding-top: 2%; */
+    /* align-items: center; */
+}
+
+.logo {
+    position: fixed;
+    left: 1%;
+    top: 2%;
+    height: 10%; 
+}
+
+
+
+
+ 
+.navbar {
+    height: 100%;
+    /* width: 15%; */
+    position: fixed;
+    z-index: 1;
+    top: 12%;
+    left: 0;
+    background: transparent;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 0px;
+}
+  
+ 
+.navbar a {
+    padding: 4px 8px 4px 32px;
+    text-decoration: none;
+    font-size: 1vw;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+  
+  /* When you mouse over the navigation links, change their color */
+  .navbar a:hover {
+    color: #d38b2d;
+  }
+
+.highlight {
+    color: #d38b2d;
+    background-color: #533e2d; 
+    border: 1px solid #533e2d;
+    transition: .5s;
+    transform: scale(1.1);
+
+}
+
+.container {
+    /* padding-left: 15%; */ /* NEW */
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; /* has to be 100vh for scroll snap to work*/
+    /* overflow: scroll; */
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
+
+    background-size: 100% 100%;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/backgrounds/12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+section {
+    /* height: auto; */
+    width: 100%;
+    margin-bottom: 5vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+h1 {
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    margin-left: 15%;  
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4%;  
+}
+
+h1.sticky {
+    z-index: 5;
+}
+
+.container span {
+    display: none;
+}
+
+.content {
+    width: 85%;
+    height: auto;
+    padding-top: 1vh;
+    margin-left: 15%;
+    border: 1px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex; /* NEW */
+    /* align-items: center; */
+
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* NEW */
+}
+
+
+
+.mainPage {
+    margin-top: 0;
+    height: 90vh;
+    background-size: 774px 294px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/backgrounds/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.content img {
+    height: 212px;
+    width: 282px;
+    
+    margin: .5%;
+    cursor: pointer;
+    transition: .5s;
+    box-sizing: border-box;
+    /* border: 10px solid rgba(255, 255, 255, 0.3) */
+}
+.content img:hover {
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+
+.modal {
+    display: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, .7), rgb(0, 0, 0, .7));
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* left: 0; */
+    justify-content: center;
+    
+    /* width: 40%;
+    height: 50%; */
+    /* opacity: .8; */
+}
+
+.modal-content {
+    /* position: fixed; */
+    color: #fff;
+    top: 1%;
+    display: flex;
+    display: -webkit-flex; /* NEW */
+    align-items: center;
+    /* text-align: center; */
+    /* margin-left: 24vw; */
+}
+
+
+.currentImage img {
+    width: 55vw;
+}
+
+
+
+ /* Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 7%;
+    right: 16%;
+    font-size: 7vw;
+    font-weight: bold;
+    z-index: 9;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.numOutOf {
+    color: white;
+    position: absolute;
+    top: 88%;
+    right: 22%;
+    font-size: 2vw;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.prevImgBtn,
+.nextImgBtn {
+    margin: auto 1%;
+}
+
+
+.fa-arrow-circle-left,
+.fa-arrow-circle-right {
+    color: rgba(255,255,255,0.5); 
+}
+
+.fa {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.fa:hover {
+    color: #818181; 
+}
+
+
+
+
+/*-----------------Contact Me---------------*/
+
+.contact-content {
+    text-align: center;
+    width: 33%;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    /* position: relative; */
+    box-sizing: border-box;
+}
+
+
+
+fieldset {
+    border: medium none !important;
+    margin-bottom: 10px;
+    /* min-width: 100%; */
+    padding: 0;
+    width: 100%;
+}
+
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(153, 0, 0);
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+.contact-form button[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    background: #533e2d;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 1vw;
+    border-radius: 200px;
+    transition: 0.5s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: #b88b4a;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 0;
+    box-sizing: border-box;
+    border: 3px solid #054268;
+}
+
+
+.social-links {
+    list-style: none;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.social-linksMobile {
+    display: none;
+}
+
+.social-links li a:hover{
+    color: #3b5998;
+}
+
+
+.icon-facebook,
+.icon-instagram {
+    transition: color 0.2s;
+    margin-bottom: -5px;
+}
+
+.icon-facebook:hover {
+    color: #3b5998;
+}
+
+.icon-instagram:hover {
+    color: #405de6;
+}
+
+
+
+/* The side navigation menu */
+#sidenavSpan {
+    display: none;
+    color: white;
+    z-index: 9;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
+
+.sidenav {
+    display: none;
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 9; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(46, 46, 46); 
+    overflow-x: hidden; 
+    padding-top: 40px;
+    transition: 0.5s; 
+  }
+  
+ 
+  .sidenav a {
+    padding-bottom: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  
+
+
+
+
+
+
+/* Animations */
+
+@-webkit-keyframes fadeMe {
+    from {  
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeMe {
+    from {  
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeAndGrowMe {
+    from {
+        width: 35vw;  
+        opacity: 0.2;
+    }
+    to {
+        width: 55vw;
+        opacity: 1;
+    }
+}
+@keyframes fadeAndGrowMe {
+    from {
+        width: 35vw;  
+        opacity: 0.2;
+    }
+    to {
+        width: 55vw;
+        opacity: 1;
+    }
+}

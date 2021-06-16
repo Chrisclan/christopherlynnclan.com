@@ -1,0 +1,444 @@
+/* colors
+#242331
+#533e2d
+#a27035
+#b88b4a
+#ddca7d
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    color: white;
+    background: none;
+    position: fixed;
+    z-index: 9;
+    width: 100vw;
+    /* text-align: center;  */
+    /* padding-top: 2%; */
+    /* align-items: center; */
+}
+
+.logo {
+    position: fixed;
+    left: 10%;
+    top: 2%;
+    height: 12%; 
+}
+
+#h3UnderHeading {
+    position: fixed;
+    /* margin-left: 15%; */
+    font-size: 300%;
+    /* text-align: center; */
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.navbar {
+    /* background-color: black; */
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 2%;
+    padding-top: 2%;  
+}
+
+.navbar a {
+    color: #DDCA7D;
+    display: inline-block;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 0.8em; 
+    border-radius: 25px;
+    /* border-style: hidden; */
+}
+  
+.navbar a:hover {
+	color: white;
+    background-color: #533e2d; 
+    border: 1px solid #533e2d;
+    border-radius: 25px;
+    transition: .5s;
+    transform: scale(1.3);
+}
+
+.navbar a.highlight {
+    color: #DDCA7D;
+    background-color: #533e2d; 
+    border: 1px solid #533e2d;
+    border-radius: 25px;
+    transition: .5s;
+    transform: scale(1.8);
+}
+
+.highlight {
+    color: #DDCA7D;
+    background-color: #533e2d; 
+    border: 1px solid #533e2d;
+    border-radius: 25px;
+    transition: .5s;
+    transform: scale(1.8);
+
+}
+
+.outer-container {
+    width: 100vw;
+    height: 100vh;
+    /* transform: rotate(-90deg) translateX(-100vh); */
+    /* transform-origin: top left; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 1200vw;
+    /* transform: rotate(90deg) translateY(-100vh); */
+    transform-origin: top left;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-size: 100% 100%;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/backgrounds/12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container span {
+    display: none;
+}
+
+.content {
+    width: 100%;
+    height: 75vh;
+    margin: auto;
+    border: 1px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.mainPage {
+    background-size: 774px 294px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/backgrounds/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contentImgs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 75vh;
+    
+    /* padding-top: 2%; */
+}
+
+.contentImgs img {
+    height: 47%;
+    margin: .5%;
+    box-sizing: border-box;
+    border: 10px solid rgba(255, 255, 255, 0.3)
+}
+
+/*  heading 11%
+    navbar 12%
+    remaining 77  */
+/* transform images to zoom in when clicked */
+
+.modal {
+    display: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, .7), rgb(0, 0, 0, .7));
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* left: 0; */
+    justify-content: center;
+    /* width: 40%;
+    height: 50%; */
+    /* opacity: .8; */
+}
+
+.modal-content {
+    /* position: fixed; */
+    color: #fff;
+    top: 1%;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    /* margin-left: 24vw; */
+}
+
+.modal-content img {
+    z-index: 10;
+    padding: 0;
+    
+}
+
+.currentImage img {
+    height: 75vh;
+}
+
+
+
+ /* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 7%;
+    right: 16%;
+    font-size: 130px;
+    font-weight: bold;
+    z-index: 99;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.numOutOf {
+    color: white;
+    position: absolute;
+    top: 88%;
+    right: 22%;
+    font-size: 200%;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.prev,
+.next,
+.prevImgBtn,
+.nextImgBtn {
+    margin: auto 1%;
+}
+
+.btn {
+    /* margin: auto 1%; */
+}
+
+.fa-arrow-circle-left,
+.fa-arrow-circle-right {
+    color: rgba(255,255,255,0.5); 
+}
+
+.fa {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.fa:hover {
+    color: red; 
+}
+
+
+#page1 .prev,
+#page12 .next {
+    visibility: hidden;
+}
+
+/*-----------------Contact Me---------------*/
+
+.contact-content {
+    text-align: center;
+    width: 33%;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+fieldset {
+    border: medium none !important;
+    margin-bottom: 10px;
+    /* min-width: 100%; */
+    padding: 0;
+    width: 100%;
+}
+
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(153, 0, 0);
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+.contact-form button[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    background: #533e2d;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 200px;
+    transition: 0.5s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: #b88b4a;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 0;
+    box-sizing: border-box;
+    border: 3px solid #054268;
+}
+
+
+.social-links {
+    list-style: none;
+    text-align: center;
+    font-size: 250%;
+    font-weight: 300;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    /* font-size: 200%; */
+}
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.social-linksMobile {
+    display: none;
+}
+
+.social-links li a:hover{
+    color: #3b5998;
+}
+
+
+.icon-facebook,
+.icon-instagram {
+    transition: color 0.2s;
+    /* font-size: 120%; */
+    margin-bottom: -5px;
+}
+
+.icon-facebook:hover {
+    color: #3b5998;
+}
+
+.icon-instagram:hover {
+    color: #405de6;
+}
+
+
+
+
+
+
+/* Animations */
+
+@keyframes fadeMe {
+    from {  
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeAndGrowMe {
+    from {
+        height: 40vh;  
+        opacity: 0.2;
+    }
+    to {
+        height: 75vh;
+        opacity: 1;
+    }
+}
+
+
+
+/* mobile navbar */
+ /* Style the navigation menu */
+ .topnav {
+    display: none;
+    overflow: hidden;
+    background-color: #3b301a;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
+    text-align: center;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #3b301a;
+    color: white;
+  } 

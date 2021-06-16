@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1300px) {
+    html,
+    body {
+    font-size: 13px;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+}

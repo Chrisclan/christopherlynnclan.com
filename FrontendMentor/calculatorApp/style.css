@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+
+body {
+    background-color: hsl(222, 26%, 31%);
+    font-family: 'Spartan', sans-serif;
+}
+
+
+
+
+.container {
+    width: 542px;
+    margin: 10% auto;
+}
+
+.topSection {
+    height: 46px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+
+
+.topSection h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.topSection h3 {
+    margin-left: auto;
+    margin-right: 5%;
+    margin-bottom: 12px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    /* align-self: baseline; */
+}
+
+.toggleNumbers {
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+.toggleSwitch {
+    /* align-self: flex-start; */
+}
+
+.toggleNumbers {
+    display: flex;
+    width: 70px;
+    justify-content: space-around;
+    padding-left: 5px;
+}
+
+.sliderContainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70px;
+    height: 26px;
+    border-radius: 15px;  
+    background-color: hsl(224, 36%, 15%);
+    outline: none;
+    opacity: 0.7;
+    padding: 5px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%; 
+    background: hsl(6, 63%, 50%);
+    cursor: pointer;
+}
+  
+
+  
+
+#screenOutput {
+    width: 100%;
+}
+
+#inputTextArea {
+    width: 100%;
+    height: 128px;
+    border: 0px;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    margin-bottom: 24px;
+    font-size: 40px;
+    color: white;
+}
+
+input[type="text"] {
+    padding: 40px 37px;
+    text-align: right;
+}
+
+
+
+
+#keypad {
+    background-color: hsl(223, 31%, 20%);
+    padding: 32px;
+    border-radius: 10px;
+    width: 100%;
+    /* height: 480px; */
+}
+
+input[type="button"],
+button {
+    padding: 0px;
+    width: 101px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;  
+}
+
+input[type="button"]:hover,
+button:hover {
+    background-color: white;
+}
+
+input[type="button"]:active,
+button:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px;
+}
+
+.row input,
+button {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 3px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+#deleteBtn,
+#resetBtn {
+    color: white;
+    font-size: 17px;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
+}
+
+#deleteBtn:hover,
+#resetBtn:hover {
+    background-color: hsl(225, 21%, 75%);
+}
+
+#deleteBtn:active,
+#resetBtn:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px;
+}
+
+/* multiply button */
+/* .keypadButton {
+    content: "\2715";
+} */
+
+#row5 {
+    margin-bottom: 0px;
+}
+
+#row5 input {
+    width: 45%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+
+#calculateBtn {
+    color: white;
+    font-size: 15px;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+}
+
+#calculateBtn:hover {
+    background-color: hsl(6, 63%, 75%);
+    box-shadow: 0px 3px hsl(6, 70%, 60%);
+}
+
+#calculateBtn:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px;
+}
+
+
+/* Theme changes */
+body.theme2 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+body.theme3 {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.topSection.theme2 {
+    color: hsl(60, 10%, 19%);
+}
+
+.topSection.theme3 {
+    color: hsl(52, 100%, 62%);
+}
+
+.slider.theme2 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.slider.theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.thumb1::-webkit-slider-thumb {    
+    background: hsl(6, 63%, 50%);    
+}
+
+.thumb2::-webkit-slider-thumb {    
+    background: hsl(25, 98%, 40%);    
+}
+
+.thumb3::-webkit-slider-thumb{    
+    background: hsl(176, 100%, 44%);    
+}
+
+#inputTextArea.theme2 {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+#inputTextArea.theme3 {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+
+#keypad.theme2 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+#keypad.theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.row input.theme2,
+.row button.theme2 {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 3px hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
+
+.row input.theme2:hover,
+.row button.theme2:hover {
+    background-color: hsl(45, 7%, 50%);
+    box-shadow: 0px 3px hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 75%);
+}
+
+.row input.theme2:active,
+.row button.theme2:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px
+}
+
+.row input.theme3,
+.row button.theme3 {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 3px hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}
+
+.row input.theme3:hover,
+.row button.theme3:hover {
+    background-color: hsl(268, 47%, 50%);
+}
+
+.row input.theme3:active,
+.row button.theme3:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px
+}
+
+#deleteBtn.theme2,
+#resetBtn.theme2 {
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 3px hsl(185, 58%, 25%);
+}
+
+#deleteBtn.theme2:hover,
+#resetBtn.theme2:hover {
+    background-color: hsl(185, 42%, 50%);
+}
+
+#deleteBtn.theme2:active,
+#resetBtn.theme2:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px
+}
+
+#deleteBtn.theme3,
+#resetBtn.theme3 {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 3px hsl(285, 91%, 52%);
+}
+
+#deleteBtn.theme3:hover,
+#resetBtn.theme3:hover {
+    background-color: hsl(281, 89%, 50%);
+}
+
+#deleteBtn.theme3:active,
+#resetBtn.theme3:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px
+}
+
+#calculateBtn.theme2 {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 3px hsl(25, 99%, 27%);
+}
+
+#calculateBtn.theme2:hover {
+    background-color: hsl(25, 98%, 60%);
+}
+
+#calculateBtn.theme2:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px
+}
+
+#calculateBtn.theme3 {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 3px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+#calculateBtn.theme3:hover {
+    background-color: hsl(176, 100%, 30%);
+    color: hsl(198, 20%, 75%);
+}
+
+#calculateBtn.theme3:active {
+    box-shadow: inset -2px -2px 3px,
+                inset 2px 2px 3px
+}
+
+
+
+

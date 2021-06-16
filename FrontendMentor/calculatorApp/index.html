@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topSection" id="topSection">
+            <h1>calc</h1>
+            <h3>THEME</h3>
+            <div class="toggleSwitch">
+                <div class="toggleNumbers">
+                    <span id="themeOne">1</span>
+                    <span id="themeTwo">2</span>
+                    <span id="themeThree">3</span>
+                </div>
+                <div class="sliderContainer">
+                    <input class="slider" id="myRange" type="range" min="1" max="3" step="1" value="1" />
+                </div>
+            </div>
+            
+        </div>
+        <form name="form">
+            <div id="screenOutput">
+                <input type="text" id="inputTextArea" name="screenDisplay" READONLY>
+            </div>
+
+            <div id="keypad">
+                <div class="row" id="row1">
+                    <input class="keypadButton" id="key7" type="button" name="seven" value="7" onclick="showClickResult(seven.value)">
+                    <input class="keypadButton" id="key8" type="button" name="eight" value="8" onclick="showClickResult(eight.value)">
+                    <input class="keypadButton" id="key9" type="button" name="nine" value="9" onclick="showClickResult(nine.value)">
+                    <input type="button" name="del" value="DEL" id="deleteBtn" onclick="deleteLastNumber()">
+                </div>
+                <div class="row" id="row2">
+                    <input class="keypadButton" id="key4" type="button" name="four" value="4" onclick="showClickResult(four.value)">
+                    <input class="keypadButton" id="key5" type="button" name="five" value="5" onclick="showClickResult(five.value)">
+                    <input class="keypadButton" id="key6" type="button" name="six" value="6" onclick="showClickResult(six.value)">
+                    <input class="keypadButton" id="keyPlus" type="button" name="plus" value="+" onclick="showClickResult(plus.value)">
+                </div>
+                <div class="row" id="row3">
+                    <input class="keypadButton" id="key1" type="button" name="one" value="1" onclick="showClickResult(one.value)">
+                    <input class="keypadButton" id="key2" type="button" name="two" value="2" onclick="showClickResult(two.value)">
+                    <input class="keypadButton" id="key3" type="button" name="three" value="3" onclick="showClickResult(three.value)">
+                    <input class="keypadButton" id="keyMinus" type="button" name="minus" value="-" onclick="showClickResult(minus.value)">
+                </div>
+                <div class="row" id="row4">
+                    <input class="keypadButton" id="keyDecimal" type="button" name="decimal" value="." onclick="showClickResult(decimal.value)">
+                    <input class="keypadButton" id="key0" type="button" name="zero" value="0" onclick="showClickResult(zero.value)">
+                    <input class="keypadButton" id="keyDivide" type="button" name="divide" value="/" onclick="showClickResult(divide.value)">
+                    <button class="keypadButton" id="keyMultiply" type="button" name="multiply" value="*" onclick="showClickResult(multiply.value)">x</button>
+                    
+                </div>
+                <div class="row" id="row5">
+                    <input type="button" name="reset" value="RESET" id="resetBtn" onclick="clearScreen()">
+                    <input type="button" name="calculate" value="=" id="calculateBtn" onclick="calcResult()">
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Christopher Clan</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

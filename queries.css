@@ -1,0 +1,202 @@
+
+
+/*computers: 1024-1200px*/
+@media only screen and (max-width: 1200px) {
+    body { font-size: 100%; }
+    .section-about-me,
+    .section-portfolio,
+    .section-contact {
+        width: 90%;
+        margin: 1% 5%;
+    }
+
+    .codeLinks li {
+        padding: 0;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    /* iframe {
+        height: 20em;  
+    } */
+    
+}
+
+/*tablet: 768-1023px*/
+@media only screen and (max-width: 1023px) {
+    body { font-size: 14px; }
+    header {
+        background-attachment: scroll;
+    }
+    .sticky .main-nav {
+        float: none;
+        text-align: center;
+        padding: 0;
+        font-size: 130%;
+    }
+    .sticky .main-nav li {
+        margin: 5px, 10px;
+    }
+    .showcase {
+        width: 55%;
+        margin: 25%;
+    }
+    
+    .section-about-me-content {
+        display: block;
+    }
+    .about-me-photo {
+        background: none;
+        border: 0;
+        margin: 0;
+    }
+    .about-me-text {
+        font-size: 16px;
+        text-align: center;
+        
+    }
+    
+    .my-photo {
+        display: block;
+        width: 40%;
+        margin: 0 0 30% 30%;
+        margin-bottom: 10px;
+    }
+    
+    .codeLinks img {
+        border: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    
+    
+}
+
+/*phones smaller than tablet: 481-767px*/
+@media only screen and (max-width: 767px) {
+    header {
+        background-attachment: scroll;
+    }
+    
+    .sticky .main-nav {
+        font-size: 100%;
+        width: 97%;
+        padding: 0;
+        text-align: center;
+        margin: 10px, 0;
+    }
+    .main-nav {
+        float: none;
+    }
+    .sticky .main-nav li {
+        margin: 5px;
+    }
+    .showcase {
+        width: 100%;
+        margin: 25% auto;
+    }
+    
+    .section-about-me {
+        text-align: center;
+    }
+
+    .my-photo {
+        width: 50%;
+        height: auto;
+        margin: 2% auto;
+    }
+
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .codeLinks li {
+        padding: 0 5%;
+    }
+
+    .modal-content {
+        margin-top: 4%;
+        width: 90vw;
+    }
+
+    iframe {
+        left: 7%;
+        width: 85vw;
+    }
+
+    .skills-box {
+        width: 32%;
+        margin: 10px 0;
+    }
+    .course-content {
+        display: block;
+    }
+    .section-courses-content {
+        font-size: 18px;
+    }
+    .section-contact-content {
+        width: 300px;
+    }
+    footer {
+        padding: 50px 5px;
+    }
+    footer p {
+        font-size: 150%;
+    }
+    section {
+        opacity: 1;
+    }
+    @keyframes fade {
+        from {opacity: 1;}
+        to {opacity: 1}
+    }
+}
+
+/*small phones: 0-480px*/
+@media only screen and (max-width: 480px) {
+    header {
+        background-attachment: scroll;
+    }
+    .sticky .main-nav {
+        font-size: 90%;
+    }
+    .sticky .main-nav li {
+        margin: 4px;
+    }
+    section {
+        padding-top: 40px;
+    }
+    .main-nav {
+        display: none;
+    }
+    .showcase {
+        margin: 45% auto;
+    }
+    .skills-box {
+        width: 50%;
+    }
+    
+    .section-contact-content {
+        width: 300px;
+    }
+    footer p {
+        font-size: 200%
+    }
+    
+    .social-links {
+        flex-direction: column;
+    }
+    
+    .social-links li {
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 200%;
+    }
+
+}

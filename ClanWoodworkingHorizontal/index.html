@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <script src="https://use.fontawesome.com/50630b0b60.js"></script>
+    <title>ClanWoodWorkingScrollHorizontal</title>
+    
+<body onresize="myResize()">
+    
+    <header class="heading">
+    <div class="topnav">
+        <a href="#home" class="active">Clan Woodworking</a>
+        <div id="myLinks">
+            <a href="#pageLink1">Clan Woodworking</a>
+            <a href="#pageLink2">Adirondack Chairs</a>
+            <a href="#pageLink3">King Size Bed Frame</a>
+            <a href="#pageLink4">Desk</a>
+            <a href="#pageLink5">Double Dog Kennel</a>
+            <a href="#pageLink6">Entertainment Center</a>
+            <a href="#pageLink7">Mallets</a>
+            <a href="#pageLink8">Mjolnir Thor's Hammer</a>
+            <a href="#pageLink9">Mugs</a>
+            <a href="#pageLink10">Reclining Patio Chairs</a>
+            <a href="#pageLink11">Aquarium</a>
+            <a href="#pageLink12">Contact Me</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+        <img src="img/LogoNoBackground.png" class="logo" alt="">
+        <h3 id="h3UnderHeading" class="h3Hide"></h3>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="prevImgBtn">
+                    <i class="fa fa-arrow-circle-left fa-5x prevImg"></i>
+                </div>
+                <div class="currentImage">
+
+                </div>
+                <div class="nextImgBtn">
+                    <i class="fa fa-arrow-circle-right fa-5x nextImg"></i>
+                </div>
+                <span class="numOutOf">/6</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="navbar" id="navbar">
+        <a id="navPage1" href="#pageLink1">Clan Woodworking</a>
+        <a id="navPage2" href="#pageLink2">Adirondack Chairs</a>
+        <a id="navPage3" href="#pageLink3">King Size Bed Frame</a>
+        <a id="navPage4" href="#pageLink4">Desk</a>
+        <a id="navPage5" href="#pageLink5">Double Dog Kennel</a>
+        <a id="navPage6" href="#pageLink6">Entertainment Center</a>
+        <a id="navPage7" href="#pageLink7">Mallets</a>
+        <a id="navPage8" href="#pageLink8">Mjolnir Thor's Hammer</a>
+        <a id="navPage9" href="#pageLink9">Mugs</a>
+        <a id="navPage10"  href="#pageLink10">Reclining Patio Chairs</a>
+        <a id="navPage11"  href="#pageLink11">Aquarium</a>
+        <a id="navPage12"  href="#pageLink12">Contact Me</a>
+    </div>
+
+    
+
+    
+
+    <div class="outer-container" id="outer-container">
+        <div class="container" id="container">
+            <div id="page1" class="page"><span class="pageTitle">Clan Woodworking</span>
+                <div class="prev">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i>
+                </div>
+                <div class="content mainPage">
+                    <div class="social-linksMobile">
+                        <ul>
+                            <li><a href="https://www.facebook.com/chris.clan.9" target="_blank"><i class="fa fa-facebook-square icon-facebook"></i>Facebook</a></li>
+                            <li><a href="https://www.instagram.com/clanwoodworking" target="_blank"><i class="fa fa-instagram icon-instagram"></i>Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page2" class="page"><span>Adirondack Chairs</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i> 
+                </div>
+                <div class="content">
+                    
+                    <div class="contentImgs">
+                        <img id="AdirondackChair1" src="img/AdirondackChairs/AdirondackChair1.jpg" alt="">
+                        <img id="AdirondackChair2" src="img/AdirondackChairs/AdirondackChair2.jpg" alt="">
+                        <img id="AdirondackChair3" src="img/AdirondackChairs/AdirondackChair3.jpg" alt="">
+                        <img id="AdirondackChair4" src="img/AdirondackChairs/AdirondackChair4.jpg" alt="">
+                        <img id="AdirondackChair5" src="img/AdirondackChairs/AdirondackChair5.jpg" alt="">
+                        <img id="AdirondackChair6" src="img/AdirondackChairs/AdirondackChair6.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page3" class="page"><span>King Size Bed Frame</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i> 
+                </div>
+                <div class="content">
+                    <div class="contentImgs">    
+                        <img id="bed1" src="img/Bed/bed1.jpg" alt="">
+                        <img id="bed2" src="img/Bed/bed2.jpg" alt="">
+                        <img id="bed3" src="img/Bed/bed3.jpg" alt="">
+                        <img id="bed4" src="img/Bed/bed4.jpg" alt="">
+                        <img id="bed5" src="img/Bed/bed5.jpg" alt="">
+                        <img id="bed6" src="img/Bed/bed6.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page4" class="page"><span>Desk</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i> 
+                </div>
+                <div class="content">
+                    <div class="contentImgs">
+                        <img id="desk1" src="img/Desk/desk1.jpg" alt="">
+                        <img id="desk2" src="img/Desk/desk2.jpg" alt="">
+                        <img id="desk3" src="img/Desk/desk3.jpg" alt="">
+                        <img id="desk4" src="img/Desk/desk4.jpg" alt="">
+                        <img id="desk5" src="img/Desk/desk5.jpg" alt="">
+                        <img id="desk6" src="img/Desk/desk6.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page5" class="page"><span>Double Dog Kennel</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i> 
+                </div>
+                <div class="content">
+                    <div class="contentImgs">
+                        <img id="dogKennel1" src="img/DogKennel/dogKennel1.jpg" alt="">
+                        <img id="dogKennel2" src="img/DogKennel/dogKennel2.jpg" alt="">
+                        <img id="dogKennel3" src="img/DogKennel/dogKennel3.jpg" alt="">
+                        <img id="dogKennel4" src="img/DogKennel/dogKennel4.jpg" alt="">
+                        <img id="dogKennel5" src="img/DogKennel/dogKennel5.jpg" alt="">
+                        <img id="dogKennel6" src="img/DogKennel/dogKennel6.jpg" alt="">
+                    </div>
+                
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page6" class="page"><span>Entertainment Center</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i>
+                </div>
+                <div class="content">
+                    <div class="contentImgs">
+                        <img id="center1" src="img/EntertainmentCenter/center1.jpg" alt="">
+                        <img id="center2" src="img/EntertainmentCenter/center2.jpg" alt="">
+                        <img id="center3" src="img/EntertainmentCenter/center3.jpg" alt="">
+                        <img id="center4" src="img/EntertainmentCenter/center4.jpg" alt="">
+                        <img id="center5" src="img/EntertainmentCenter/center5.jpg" alt="">
+                        <img id="center6" src="img/EntertainmentCenter/center6.jpg" alt="">
+                    </div>
+                
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page7" class="page"><span>Mallets</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i> 
+                </div>
+                <div class="content">
+                    <div class="contentImgs">
+                        <img id="mallet1" src="img/Mallets/mallet1.jpg" alt="">
+                        <img id="mallet2" src="img/Mallets/mallet2.jpg" alt="">
+                        <img id="mallet3" src="img/Mallets/mallet3.jpg" alt="">
+                        <img id="mallet4" src="img/Mallets/mallet4.jpg" alt="">
+                        <img id="mallet5" src="img/Mallets/mallet5.jpg" alt="">
+                        <img id="mallet6" src="img/Mallets/mallet6.jpg" alt="">
+                    </div>
+                
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page8" class="page"><span>Mjolnir Thor's Hammer</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i>
+                </div>
+                <div class="content">
+                    <div class="contentImgs">
+                        <img id="mjolnir1" src="img/Mjolnir/mjolnir1.jpg" alt="">
+                        <img id="mjolnir2" src="img/Mjolnir/mjolnir2.jpg" alt="">
+                        <img id="mjolnir3" src="img/Mjolnir/mjolnir3.jpg" alt="">
+                        <img id="mjolnir4" src="img/Mjolnir/mjolnir4.jpg" alt="">
+                        <img id="mjolnir5" src="img/Mjolnir/mjolnir5.jpg" alt="">
+                        <img id="mjolnir6" src="img/Mjolnir/mjolnir6.jpg" alt="">
+                    </div>
+                
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page9" class="page"><span>Mugs</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i>
+                </div>
+                <div class="content">
+                    <div class="contentImgs">
+                        <img id="mug1" src="img/Mug/mug1.jpg" alt="">
+                        <img id="mug2" src="img/Mug/mug2.jpg" alt="">
+                        <img id="mug3" src="img/Mug/mug3.jpg" alt="">
+                        <img id="mug4" src="img/Mug/mug4.jpg" alt="">
+                        <img id="mug5" src="img/Mug/mug5.jpg" alt="">
+                        <img id="mug6" src="img/Mug/mug6.jpg" alt="">
+                    </div>
+                
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page10" class="page"><span>Reclining Patio Chairs</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i>
+                </div>
+                <div class="content">
+                    <div class="contentImgs">
+                        <img id="recliningChair1" src="img/RecliningPatioChairs/recliningChair1.jpg" alt="">
+                        <img id="recliningChair2" src="img/RecliningPatioChairs/recliningChair2.jpg" alt="">
+                        <img id="recliningChair3" src="img/RecliningPatioChairs/recliningChair3.jpg" alt="">
+                        <img id="recliningChair4" src="img/RecliningPatioChairs/recliningChair4.jpg" alt="">
+                        <img id="recliningChair5" src="img/RecliningPatioChairs/recliningChair5.jpg" alt="">
+                        <img id="recliningChair6" src="img/RecliningPatioChairs/recliningChair6.jpg" alt="">
+                    </div> 
+                     
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page11" class="page"><span>Aquarium</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i>
+                </div>
+                <div class="content">
+                    
+                    <div class="contentImgs">
+                        <img id="aquarium1" class="img" src="img/Aquarium/aquarium1.jpg" alt="">
+                        <img id="aquarium2" class="img" src="img/Aquarium/aquarium2.jpg" alt="">
+                        <img id="aquarium3" class="img" src="img/Aquarium/aquarium3.jpg" alt="">
+                        <img id="aquarium4" class="img" src="img/Aquarium/aquarium4.jpg" alt="">
+                        <img id="aquarium5" class="img" src="img/Aquarium/aquarium5.jpg" alt="">
+                        <img id="aquarium6" class="img" src="img/Aquarium/aquarium6.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="next btn">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+
+            <div id="page12" class="page"><span>Contact Me</span>
+                <div class="prev btn">
+                    <i class="fa fa-arrow-circle-left fa-5x"></i>
+                </div>
+                <div class="content">
+                    
+                    <div class="contact-content">
+                        <form class="contact-form" action="contactform.php" method="post">
+                            <fieldset>
+                                <input type="text" name="name" placeholder="Your Name">
+                            </fieldset>
+                            <fieldset>
+                                <input type="text" name="mail" placeholder="Your Email Address">
+                            </fieldset>
+                            <fieldset>
+                                <input type="text" name="subject" placeholder="Subject">
+                            </fieldset>
+                            <fieldset>
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <button type="submit" name="submit">Send Email</button>
+                            </fieldset>
+                        </form>
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="https://www.facebook.com/chris.clan.9" target="_blank"><i class="fa fa-facebook-square icon-facebook"></i>Facebook</a></li>
+                                <li><a href="https://www.instagram.com/clanwoodworking" target="_blank"><i class="fa fa-instagram icon-instagram"></i>Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="next">
+                    <i class="fa fa-arrow-circle-right fa-5x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script> 
+</body>
+</html>

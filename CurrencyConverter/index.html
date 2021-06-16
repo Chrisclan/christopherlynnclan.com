@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <script src="https://kit.fontawesome.com/d17cbdf306.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <div class="container">
+        <input type="number" placeholder="Input currency here..." id="input-currency" class= "converted-field">
+        <div class="selection">
+            
+            <div class="selection-box">
+                <h2>From</h2>
+                <select id="select1" onchange="selectFromSelect()">
+                    <option value="0">Select From:</option>
+                    <option value="USD">USD (US$) United States dollar</option>
+                    <option value="EUR">EUR (€) Euro</option>
+                    <option value="JPY">JPY (¥) Japanese yen</option>
+                    <option value="GBP">GBP (£) Pound sterling</option>
+                    <option value="AUD">AUD (A$) Australian dollar</option>
+                    <option value="CAD">CAD (C$) Canadian dollar</option>
+                    <option value="CHF">CHF (CHF) Swiss franc</option>
+                    <option value="CNY">CNY (元) Chinese Yuan</option>
+                    <option value="HKD">HKD (HK$) Hong Kong dollar</option>
+                    <option value="NZD">NZD (NZ$) New Zealand dollar</option>
+                    <option value="SEK">SEK (kr) Swedish krona</option>
+                    <option value="KRW">KRW (₩) South Korean won</option>
+                </select>
+                
+                <div id="selectFrom"></div>
+                <div id="from-currency"></div>
+            </div>
+            <div class="buttons"> 
+                <div id="btn-id">
+                    <h3>Convert</h3>
+                    <button type="submit" class="submit-btn"><i class="fas fa-chevron-circle-right fa-5x"></i></button>
+                </div>
+                <div class="rate">
+                    <h3>Rate</h3>
+                    <p id="rate">0</p>
+                </div>
+                <div id="btnSwitch">
+                    <h3>Switch</h3>
+                    <button type="submit" class="switch-btn"><i class="fas fa-exchange-alt fa-4x"></i></button>
+                </div>
+            </div> 
+            <div class="selection-box">
+                <h2>To</h2>
+                <select id="select2" onchange="selectToSelect()">
+                    <option value="0">Select To:</option>
+                    <option value="USD">USD (US$) United States dollar</option>
+                    <option value="EUR">EUR (€) Euro</option>
+                    <option value="JPY">JPY (¥) Japanese yen</option>
+                    <option value="GBP">GBP (£) Pound sterling</option>
+                    <option value="AUD">AUD (A$) Australian dollar</option>
+                    <option value="CAD">CAD (C$) Canadian dollar</option>
+                    <option value="CHF">CHF (CHF) Swiss franc</option>
+                    <option value="CNY">CNY (元) Chinese Yuan</option>
+                    <option value="HKD">HKD (HK$) Hong Kong dollar</option>
+                    <option value="NZD">NZD (NZ$) New Zealand dollar</option>
+                    <option value="SEK">SEK (kr) Swedish krona</option>
+                    <option value="KRW">KRW (₩) South Korean won</option>
+                </select>
+                <div id="selectTo"></div>
+                <div id="to-currency" placeholder="0"></div>
+            </div>
+        </div>
+        <div id="btn-id2">
+            <h3>Convert</h3>
+            <button type="submit" class="submit-btn2"><i class="fas fa-chevron-circle-right fa-5x"></i></button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

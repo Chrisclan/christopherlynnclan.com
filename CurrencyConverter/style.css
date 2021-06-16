@@ -1,0 +1,167 @@
+/*
+colors
+#0D1B2A
+#1B263B
+#415A77
+#778DA9
+#E0E1DD
+*/
+
+html {
+    height: 100%;
+}
+
+* { 
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 100%;
+    line-height: 1.5;
+    background: 
+        linear-gradient(to right bottom,
+        #E0E1DD 0%/*bottom-right color*/,
+        #415A77 50% /*middle color*/,
+        #0D1B2A 100% /*top-left color*/),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-repeat: no-repeat;
+  }
+
+
+h1 {
+    text-align: center;
+    padding-top: 5%;
+    color: #E0E1DD;
+}
+
+h2 {
+    text-align: center;
+    padding: 2% auto;
+}
+
+h3 {
+    text-align: center;
+    padding: 2% auto;
+}
+
+.container {
+    height: 350px;
+    border: 2px solid #778DA9;
+    background-color: #E0E1DD;
+    width: 100%;
+    max-width: 40%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    /* border-radius: 5%/10%; */
+}
+
+.selection {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection-box {
+    border: 5px solid #1B263B;
+    padding: 1%;
+    text-align: center;
+    background-color: #b8b9b9;
+    width: 38%;
+    height: 275px;
+    /* border-radius: 10%; */
+    position: relative;
+}  
+
+.buttons {
+    height: 100%;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* #btn-id {
+    margin-bottom: 25px;
+} */
+
+.submit-btn,
+.switch-btn,
+.submit-btn2 {
+    border: 0px;
+    border-radius: 50%;
+    padding: 1%;
+    outline: none;
+    color: #415A77;
+    background: #E0E1DD;
+    
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+}
+
+.submit-btn2,
+#btn-id2 {
+    display: none;
+    margin: auto;
+}
+
+#input-currency {
+    margin: 0 auto;
+    width:  50%;
+    text-align: center;
+}
+
+select {
+    width: 95%;
+    margin: 0 1%;
+    box-sizing:content-box;
+}
+
+#input-currency2 {
+    visibility: hidden;;
+}
+
+input[type="number"]
+{
+    font-size:24px;
+}
+
+#selectFrom,
+#selectTo {
+    /* color: #E0E1DD; */
+    padding-top: 10%;
+}
+
+/* #selectTo {
+    padding-top: 30%;
+} */
+
+#from-currency,
+#to-currency {
+    /* color: #E0E1DD; */
+    font-size: 200%;
+    position: absolute;
+    width: 255px;
+    top: 50%;
+    left: 50%;
+    margin-left: -127.5px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
