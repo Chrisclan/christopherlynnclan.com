@@ -30,7 +30,7 @@ body {
     font-weight: 100; 
     font-size: 18px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -401,45 +401,53 @@ header {
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    height: 87%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    overscroll-behavior: contain;
+    /* overscroll-behavior: contain; */
 }
 
 .currentTextFile {
-    padding-top: 56.25%;
+    /* padding-top: 56.25%; */
 }
 
-iframe {
-    position: absolute;
-    top: 15%;
-    left: 17.5%;
-    height: 70vh;
-    width: 65vw;
-    border: none;  
+#clanwoodworkingHtmlModal,
+#clanwoodworkingCssModal,
+#clanwoodworkingJsModal,
+#clanwoodworkingHorzHtmlModal,
+#clanwoodworkingHorzCssModal,
+#clanwoodworkingHorzJsModal,
+#kylesHomeRepairHtmlModal,
+#kylesHomeRepairCssModal,
+#kylesHomeRepairJsModal {
+    display: none;
 }
 
   /* Modal Content */
 .modal-content {
     background-color: rgba(0,0,0,0.8);
     margin: auto;
-    padding: 10px 15px;
+    padding: 20px;
     border: 1px solid black;
     /* border: 2px solid red; */
     border-radius: 25px;
     width: 70vw;
-    height: 80vh;
-    overscroll-behavior: contain;
+    /* height: 100%; */
+    /* overscroll-behavior: contain; */
+    overflow-y: auto;
 }
   
   /* The Close Button */
 .close {
     color: #aaaaaa;
-    float: right;
-    margin-right: 10px;
-    font-size: 40px;
+    /* float: right; */
+    z-index: 2;
+    position: fixed;
+    top: 95px;
+    right: 260px;
+    /* margin-right: 10px; */
+    font-size: 60px;
     font-weight: bold;
 }
   
